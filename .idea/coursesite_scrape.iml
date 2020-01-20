@@ -3,6 +3,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/tutorial/tutorial" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coursesite/coursesite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/coursesite" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (coursesite-scraper)" jdkType="Python SDK" />

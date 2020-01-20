@@ -125,5 +125,5 @@ def plot_grad_year():
 
 
 if __name__ == '__main__':
-    # plot_upset()
-    plot_grad_year()
+    plot_upset()
+    # plot_grad_year()
