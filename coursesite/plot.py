@@ -40,7 +40,7 @@ def plot_upset():
         if match:
             grad_year = int(match.group(1))
             # Get rid of really old emails things...
-            if grad_year < 18:
+            if grad_year < 20:
                 grad_year = None
         else:
             grad_year = None
@@ -54,7 +54,7 @@ def plot_upset():
     print(df, type(df))
 
     us = upsetplot.UpSet(df, subset_size='count', show_counts='%d')
-    # us.add_catplot(value='graduation_year', kind='boxen')
+    us.add_catplot(value='graduation_year', kind='violin')
     us.plot()
     plt.title('Set Intersections in My Fall 2019 Schedule')
     plt.show()
@@ -117,7 +117,7 @@ def plot_grad_year():
     plt.legend()
     plt.ylabel('Percentage of Class Makeup')
     plt.xlabel('Class')
-    plt.title('Percentage of Class Makeup by Grade')
+    plt.title('Percentage of Class Makeup by Grade (Fall 2019)')
     plt.show()
 
 
@@ -125,5 +125,5 @@ def plot_grad_year():
 
 
 if __name__ == '__main__':
-    plot_upset()
-    # plot_grad_year()
+    # plot_upset()
+    plot_grad_year()
