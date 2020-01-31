@@ -183,7 +183,7 @@ def scrape_classes(driver):
 
 
     print(classes)
-    with open('classes.json', 'w') as outfile:
+    with open('classes_raw.json', 'w') as outfile:
         json.dump(classes, outfile)
 
 
@@ -215,5 +215,5 @@ if __name__ == '__main__':
     #     scrape_all_users(driver)
     # with webdriver.Firefox(executable_path='../geckodriver.exe') as driver:
     driver = webdriver.Firefox(executable_path='../geckodriver.exe')
-    scrape_all_users(driver)
-    # scrape_classes(driver)
+    # scrape_all_users(driver)
+    scrape_classes(driver)

@@ -1,4 +1,4 @@
-## Which people do I share the most classes with?
+# Which people do I share the most classes with?
 
 Most students think about this question at the beginning of a semester.
 They might ask their friends about the classes they're taking, and they'll probably notice a few people who they share a bunch of classes with.
@@ -80,7 +80,72 @@ Unfortunately, I don't think this is very readable. Other than a series of pie c
 really sure how to express percentages for several different groups well.
 
 
-#### Spring 2020 classes (stay tuned)
+### Spring 2020 classes
+
+Here is my spring schedule. 
+It's my first time taking a grad class so we'll see how that goes.
+
+| ID      | Name                       |
+|---------|----------------------------|
+| CSE-398 | Software Verification      |
+| CSE-403 | Advanced Operating Systems |
+| CSE-280 | Capstone Project I         |
+| CSE-327 | Artificial Intelligence    |
+| CSE-318 | Theory Of Computation      |
+
+_Software Verification doesn't have a coursesite to scrape, but Professor Michael Spear
+was kind enough to email me the participants list._
+
+![UpSet plot of Spring 2020](./coursesite/images/upsetplot_S2020_gradyear.png)
+
+**Brief Analysis:**
+- Software Verification and Advanced Operating Systems have a surprisingly high amount of overlap.
+- Similar to the Fall, There is a 11 way tie for people who share three classes with me.
+
+![Percentage bar chart of courses by grad_year for Spring 2020](./coursesite/images/percentage_bar_s2020.png)
+
+**Brief Analysis:**
+- The small percentage of "grad students" who are taking Capstone I are likely
+  super-super seniors which I misclassified.
+- The large amount of unknowns in Advanced Operating Systems are likely grad students
+  who never added their email address to coursesite.
+
+### All together now
+
+By combining my Fall 2019 and Spring 2020 data I was able to produce this monster.
+The set intersections of my entire 2019-2020 school year.
+
+![UpSet plot of 2019-2020](./coursesite/images/upsetplot_2019-2020_gradyear.png)
+
+_Try popping out the image to make it easier to read_
+
+While I'm sure there's some crazy analysis I could do with this graph,
+I'm going to settle for answering the question I posed in the beginning of this article.
+Which people share the most classes with me?
+
+6 classes (2 people)
+- Shane Acoveno
+- Letong (Simon) Zhang
+
+5 classes (9 people)
+- Daniel Yu
+- Reilly Yankovich
+- _Jitong Ding_
+- _Emir Anda_
+- _Hansen Lukman_
+- _Bradford (Brad) DeMassa_
+- _Olivia Grimes_
+- Thomas (Kingsley) Leighton
+- Nathan Tokala
+
+The five who are in italics all took the exact same courses:
+- Fall: CSE-216, CSE-340
+- Spring: CSE-280, CSE-327, CSE-318
+
+When beginning this project, I expected that I would not know the person who shares
+the most classes with me, and I was right. I don't know either of those people.
+
+What is surprising though is that I'm well acquainted with three of the people who share five classes with me.
 
 
 Aside:
