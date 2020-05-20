@@ -36,7 +36,7 @@ After cleaning, I plotted the data using the [python UpSet library](https://pypi
 Oringinally developed for visualizing the similarities between the genomes of organisms, 
 it's perfect for this project becuase a venn diagram with more than three sets (classes) would be difficult to read.
 
-![UpSet plot of Fall 2019](./coursesite/images/upsetplot_F2019.png)
+![UpSet plot of Fall 2019](./coursesite/images/F2019.png)
 
 **UpSet 101:**
 - The horizontal bars to the left of the course IDs are the **total enrollment** for that course.
@@ -59,7 +59,7 @@ Lehigh emails have a format of `INITIALS|NUM|GRAD_YEAR@lehigh.edu`. For example,
 By scraping people user pages for their emails, 
 I was able to determine their graduation years and add this data to the graph as a series of violin plots.
 
-![UpSet plot of Fall 2019 with grad_year](./coursesite/images/upsetplot_violin.png)
+![UpSet plot of Fall 2019 with grad_year](./coursesite/images/F2019_gradyear.png)
 
 **Brief Analysis:**
 - The four people taking only Algorithms & Reinforcment Leaning are all grad students.
@@ -68,7 +68,7 @@ I was able to determine their graduation years and add this data to the graph as
 
 Ultimately, I was unhappy with how this graphic displayed the grad year data, so I created a percentage bar chart as well.
 
-![Percentage bar chart of courses by grad_year](./coursesite/images/percentage_bar_class_makeup.png)
+![Percentage bar chart of courses by grad_year](./coursesite/images/F2019_percentage_bar.png)
 
 **Brief Analysis:**
 - Reinforcement Learning is very popular with grad students.
@@ -96,13 +96,13 @@ It's my first time taking a grad class so we'll see how that goes.
 _Software Verification doesn't have a coursesite to scrape, but Professor Michael Spear
 was kind enough to email me the participants list._
 
-![UpSet plot of Spring 2020](./coursesite/images/upsetplot_S2020_gradyear.png)
+![UpSet plot of Spring 2020](./coursesite/images/S2020_gradyear.png)
 
 **Brief Analysis:**
 - Software Verification and Advanced Operating Systems have a surprisingly high amount of overlap.
 - Similar to the Fall, There is a 11 way tie for people who share three classes with me.
 
-![Percentage bar chart of courses by grad_year for Spring 2020](./coursesite/images/percentage_bar_s2020.png)
+![Percentage bar chart of courses by grad_year for Spring 2020](./coursesite/images/S2020_percentage_bar.png)
 
 **Brief Analysis:**
 - The small percentage of "grad students" who are taking Capstone I are likely
@@ -115,7 +115,7 @@ was kind enough to email me the participants list._
 By combining my Fall 2019 and Spring 2020 data I was able to produce this monster.
 The set intersections of my entire 2019-2020 school year.
 
-![UpSet plot of 2019-2020](./coursesite/images/upsetplot_2019-2020_gradyear.png)
+![UpSet plot of 2019-2020](./coursesite/images/FullYear_gradyear.png)
 
 _Try popping out the image to make it easier to read_
 
@@ -148,17 +148,10 @@ the most classes with me, and I was right. I don't know either of those people.
 What is surprising though is that I'm well acquainted with three of the people who share five classes with me.
 
 
-Aside:
-> While I kind of breeze past the initial scraping stuff. 
-> Even beginning to scrape coursesite was a massive hurdle for me.
-> I attempted to use requests, scrapy + splash, and then scrapy + selenium.
-> I tried all kinds of different ways to save cookies and headers, 
-> but eventually I started using selenium alone because it just worked, and performance wasn't a concern for this project.
-> Maybe in the future I'll come back to scrapy and see if it clicks.
 
 Reflections:
-- learned: selenium, xpath
-- learned some of: pandas, seaborn, matplotlib
+- learned about scraping: selenium, xpath
+- learned about graphing: pandas, seaborn, matplotlib
 - While I didn't do it in this project. I really should have defined classes or namedtuples which represented the data I was scraping.
   It eventually became quite annoying when every object, whether it was a user profile, or a course, or an entry in a
   participants list was a dict instead of a class.
